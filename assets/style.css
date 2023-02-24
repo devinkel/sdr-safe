@@ -1,0 +1,95 @@
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 200px;
+    position: absolute;
+    left: 40px;
+    bottom: 35px;
+    z-index: 2;
+}
+
+.seach {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#map .gmnoprint {
+    display: none;
+}
+
+#download-csv {
+    background-color: #7230F6;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    height: 30px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.controls {
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    height: 40px;
+    outline: none;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 450px;
+}
+
+.controls:focus-within {
+    border-color: #907ee2;
+}
+
+.controls:focus-within #pac-icon {
+    border-color: #907ee2;
+}
+
+#pac-icon {
+    height: 28px;
+    width: 27px;
+    margin-left: 2px;
+    margin-right: 1px;
+    background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);
+    background-size: 53px 43px;
+    display: inline-block;
+    background-position: -1px -1px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 283px;
+}
